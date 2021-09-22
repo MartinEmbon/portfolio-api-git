@@ -1,3 +1,12 @@
+# Github Repository Finder for Eduzz Bootcamp on DIO
+1. In this project I used `semantic ui`
+
+## Check it out at https://repository-finder-dio.herokuapp.com/
+
+### Snapshot
+
+<img src="/src/img/screenshot.png" width="350" title="screenshot">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
