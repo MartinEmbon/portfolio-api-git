@@ -5,7 +5,9 @@
 
 ### Snapshot
 
-<img src="/src/img/screenshot.png" width="350" title="screenshot">
+<img src="/src/img/screenshot.png" width="550" title="screenshot">
+
+##
 
 # Getting Started with Create React App
 
