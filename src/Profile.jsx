@@ -13,6 +13,7 @@ const Profile = () => {
     }
 
     const submitHandler = async e => {
+       try{
         e.preventDefault()
         const profile = await fetch(`https://api.github.com/users/${username}`,)        
         const profileJson = await profile.json()
@@ -28,7 +29,9 @@ const Profile = () => {
             setRepositories(repoJson)
             setFavorites(favoritesJson)
             setErro(false)
-        } else{
+       }
+        
+        } catch(e){
             setErro(true)
         }
         
@@ -46,7 +49,7 @@ const Profile = () => {
                 <button className="ui primary button" onClick={submitHandler}  type="submit">
                 <i className="github icon"></i>Search
                 </button>       
-                { erro ? <p>Repositorio incorreto. Tente novamente</p> : ""}
+                { erro ? <p className="repoErrado">Repositorio incorreto. Tente novamente</p> : ""}
                 <DisplayTable data={data} favorites={favorites} repositories={repositories} />         
 
             </div>
